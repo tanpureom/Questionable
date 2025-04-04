@@ -1,0 +1,93 @@
+@import "tailwindcss";
+/* @plugin './my-plugin.js' */
+
+@theme {
+    --color-grey-50: #f9fafb;
+    --color-grey-100: #f3f4f6;
+    --color-grey-200: #e5e7eb;
+    --color-grey-300: #d1d5db;
+    --color-grey-400: #9ca3af;
+    --color-grey-500: #6b7280;
+    --color-grey-600: #4b5563;
+    --color-grey-700: #374151;
+    --color-grey-800: #1f2937;
+    --color-grey-900: #111827;
+    --color-grey-950: #030712;
+
+
+    --font-sm: 14px;
+    --font-md: 15px;
+    --font-lg: 16px;
+    --font-xl: 20px;
+    --font-2xl: 24px;
+}
+
+@layer base {
+    p {
+        @apply text-[16px] text-grey-950 dark:text-grey-100 font-normal;
+    }
+
+    h1 {
+        @apply text-[24px] text-grey-950 dark:text-grey-50 font-normal;
+    }
+
+    h2 {
+        @apply text-[20px] text-grey-950 dark:text-grey-50 font-normal;
+    }
+
+    button {
+        @apply text-[14px] hover:cursor-pointer;
+    }
+
+    h5 {
+        @apply text-[12px] text-grey-950 dark:text-grey-50 font-normal;
+    }
+
+    input {
+        @apply text-[16px] px-4 py-2;
+    }
+
+    span {
+        @apply font-medium;
+    }
+}
+
+* {
+    @apply transition-colors duration-300;
+    @apply transition-all duration-300;
+}
+
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-none {
+    -ms-overflow-style: none;
+    /* Hide scrollbar in IE & Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox */
+}
+
+h1 {
+    color: #030712 !important;
+}
+
+h2 {
+    color: #030712 !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+li {
+    color: #030712;
+}
+
+p {
+    color: #030712 !important;
+}
+
+.Toastify__toast-container {
+    z-index: 9999 !important;
+    /* Ensure it is above other elements */
+}
